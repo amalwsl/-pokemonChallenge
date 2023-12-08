@@ -1,0 +1,44 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+::-webkit-scrollbar-track-piece {
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+body {
+    -webkit-appearance: none;
+}
+
+/* Remove up & down arrow */
+/* Chrome, Safari, Edge, Opera */
+.remove-arrows::-webkit-outer-spin-button,
+.remove-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+.remove-arrows {
+    -moz-appearance: textfield;
+}
+
+.react-datepicker-wrapper input {
+    background-color: transparent;
+    border-bottom: 1px solid rgb(229, 231, 235);
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
